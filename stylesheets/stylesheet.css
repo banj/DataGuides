@@ -57,7 +57,12 @@ a {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(90deg, #155799, #159957); }
+  background-image: -webkit-linear-gradient(90deg, #D38312 10%, #A83279 90%); /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(90deg, #D38312 10%, #A83279 90%); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(90deg, #D38312 10%, #A83279 90%); /* IE10 */
+  background-image:      -o-linear-gradient(90deg, #D38312 10%, #A83279 90%); /* Opera 11.10+ */
+  background-image:         linear-gradient(90deg, #D38312 10%, #A83279 90%); /* W3C */
+  }
 
 @media screen and (min-width: 64em) {
   .page-header {
